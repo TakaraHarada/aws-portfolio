@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  portforio-frontend:
+    container_name: portforio-frontend
+    image: 293347908925.dkr.ecr.ap-northeast-1.amazonaws.com/portforio-frontend:latest
+    ports:
+      - 80:80
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 2048M
